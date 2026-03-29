@@ -38,6 +38,10 @@ Each product has:
 - name
 - quantity
 - created_date
+- Error if product with the same name already exists:
+  "Product already exists"
+- Error if name is empty or only whitespace:
+  "Invalid product name"
 
 Quantity must be a non-negative integer.
 
@@ -117,6 +121,11 @@ id|name|quantity|created_date
 Example:
 1|Pencil|50|2026-03-15
 2|Notebook|20|2026-03-15
+
+ID RULES:
+- IDs start from 1
+- Each new product gets the next highest ID
+- Deleted IDs are NOT reused
 
 ========================================
 ERROR HANDLING
