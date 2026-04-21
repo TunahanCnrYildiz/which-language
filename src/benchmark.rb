@@ -495,6 +495,7 @@ selected_trials.times do |trial_idx|
       problem_name: problem_config[:name]
     )
     v2_prompt += " #{LANGUAGES[lang][:extra_prompt]}" if LANGUAGES[lang][:extra_prompt]
+    v2_prompt = attach_doc_content(v2_prompt, problem_config[:v1_doc])
     v2_prompt = attach_doc_content(v2_prompt, problem_config[:v2_doc])
 
     if dry_run
