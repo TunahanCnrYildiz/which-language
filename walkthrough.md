@@ -7,7 +7,7 @@
 
 ## 2026-04-21 — Upgrade miniinventory V2 with case-insensitive search
 
-**Contributor**: Tunahan & Antigravity
+**Contributor**: AI agent (Antigravity)
 **What was done**: 
 - Added case-insensitive product search functionality to `miniinventory` V2 problem specification.
 - Updated `problems/miniinventory/SPEC-v2.txt` to define the search command requirements.
